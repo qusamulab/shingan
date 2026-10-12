@@ -13,7 +13,7 @@ from shingan.core.version import get_version
 _TEMPLATES_DIR = Path(__file__).parent.parent / "web" / "templates"
 _jinja_env = Environment(loader=FileSystemLoader(str(_TEMPLATES_DIR)), autoescape=True)
 
-_TOOL_URI = "https://github.com/ykus4/shingan"
+_TOOL_URI = "https://github.com/qusamulab/shingan"
 
 # ---------------------------------------------------------------------------
 # Localization strings (EN / JA)
