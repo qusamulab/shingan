@@ -9,7 +9,7 @@ Visualize where your app is exposed to reverse engineering — before you ship.
 [![Python 3.13+](https://img.shields.io/badge/python-3.13%2B-blue?logo=python&logoColor=white)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![OWASP MASVS](https://img.shields.io/badge/mapped%20to-OWASP%20MASVS-orange)](https://mas.owasp.org/MASVS/)
-[![CI](https://github.com/ykus4/shingan/actions/workflows/ci.yml/badge.svg)](https://github.com/ykus4/shingan/actions/workflows/ci.yml)
+[![CI](https://github.com/qusamulab/shingan/actions/workflows/ci.yml/badge.svg)](https://github.com/qusamulab/shingan/actions/workflows/ci.yml)
 
 </div>
 
@@ -112,7 +112,7 @@ Dynamic outcomes: `bypassed` (HIGH) · `resistant` (INFO) · `unavailable` (INFO
 > Requires Python 3.13+ and **[uv](https://docs.astral.sh/uv/)**.
 
 ```bash
-git clone https://github.com/ykus4/shingan.git
+git clone https://github.com/qusamulab/shingan.git
 cd shingan
 uv sync
 
@@ -124,13 +124,13 @@ uv sync --extra dynamic
 
 ```bash
 # Web UI
-docker run -p 8000:8000 -v shingan-data:/data ghcr.io/ykus4/shingan
+docker run -p 8000:8000 -v shingan-data:/data ghcr.io/qusamulab/shingan
 
 # CLI
 docker run --rm \
   -v shingan-data:/data \
   -v /path/to/artifacts:/artifacts:ro \
-  ghcr.io/ykus4/shingan \
+  ghcr.io/qusamulab/shingan \
   uv run shingan scan /artifacts/MyApp.ipa
 ```
 
@@ -179,7 +179,7 @@ uv run shingan scan MyApp.ipa --dynamic --device <udid>  # target a specific dev
 ### GitHub Actions
 
 ```yaml
-- uses: ykus4/shingan@v1
+- uses: qusamulab/shingan@v1
   with:
     ipa: build/MyApp.ipa
     fail-on: high
@@ -300,6 +300,6 @@ uv run pytest -k test_ats
 
 <div align="center">
 
-MIT License © [ykus4](https://github.com/ykus4)
+MIT License © [ykus4](https://github.com/qusamulab)
 
 </div>

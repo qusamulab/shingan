@@ -1,8 +1,8 @@
 site_name: shingan
 site_description: Static + dynamic security analysis for iOS and Android apps
-site_url: https://ykus4.github.io/shingan
-repo_url: https://github.com/ykus4/shingan
-repo_name: ykus4/shingan
+site_url: https://qusamulab.github.io/shingan
+repo_url: https://github.com/qusamulab/shingan
+repo_name: qusamulab/shingan
 edit_uri: edit/main/docs/
 
 theme:

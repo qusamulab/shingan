@@ -42,7 +42,7 @@ app = FastAPI(
     title="shingan",
     version=get_version(),
     description="iOS/Android static security analyzer — maps findings to OWASP MASVS v2",
-    contact={"url": "https://github.com/ykus4/shingan"},
+    contact={"url": "https://github.com/qusamulab/shingan"},
 )
 
 _WEB = Path(__file__).parent
